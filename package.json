@@ -1,0 +1,17 @@
+{
+	"name": "Roll",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",	
+	"devDependencies": {
+		"axios": "^0.21.1",
+		"es6-promise": "^4.2.8",
+		"isomorphic-fetch": "^3.0.0",
+		"jquery": "^3.6.0",
+		"nodemon": "^2.0.7",
+		"rollup": "^2.41.4"
+	},
+	"scripts": {
+		"build": "rollup --config rollup.config.js"
+	}
+}
