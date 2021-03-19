@@ -14,5 +14,6 @@ app.use("/", (req, res, next) => {
     res.sendFile(path.join(__dirname, "page", "_base", "error.html"));
 });
 
-app.listen(port);
-console.log(`Listening at port ${port}...`);
+app.listen(port, () => {
+    console.log(`Listening at port ${port}...`);
+});
