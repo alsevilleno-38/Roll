@@ -1,5 +1,5 @@
-import account, {num} from "./account"
+import account from "./_base/account";
+import { prepareText } from "./_base/account";
+import $ from "jquery";
 
-console.log(account);
-console.log(num);
-
+$("#container").html(prepareText("Whats"));
