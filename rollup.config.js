@@ -1,16 +1,13 @@
-// export default {
-//     input: "src/js/index.js",
-//     output: {
-//         file: "build/js/bundle.js",
-//         format: "es"
-//     }
-// }
+import { babel } from '@rollup/plugin-babel';
+import commonjs from '@rollup/plugin-commonjs';
 
-import path from "path"
-import axios from "axios"
-const workDir = process.cwd() || process.env.pwd;
+const config = {
+  input: 'src/js/index.js',
+  output: {
+    dir: 'build',
+    format: 'esm'
+  },
+  plugins: [commonjs(), babel({ babelHelpers: 'bundled' })]
+};
 
-
-export default Promise.all([
-    
-])
+export default config;
